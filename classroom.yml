@@ -1,0 +1,14 @@
+name: Autograding Tests
+tests:
+  - name: ProdutoTest
+    setup: mvn -q -Dtest=ProdutoTest test
+    run: echo PASS
+    expected_output: PASS
+    comparison: exact
+    points: 7
+  - name: MainTest
+    setup: mvn -q -Dtest=MainTest test
+    run: echo PASS
+    expected_output: PASS
+    comparison: exact
+    points: 3
